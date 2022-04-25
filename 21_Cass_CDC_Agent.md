@@ -10,7 +10,7 @@ For this demo, we will use ` Release v1.0.5 `
 
 ---
 
-## Download Agent-Cass-Pulsar-<version>.jar
+## Download Agent-Cass-Pulsar-version.jar
 ## on all Cassandra nodes :
 
 ```
@@ -29,7 +29,7 @@ $
 ```
 
 
-## Configure Agent-Cass-Pulsar-<version>.jar
+## Configure Agent-Cass-Pulsar-version.jar
 ## on all Cassandra nodes :
 
 ## vi <CASSANDRA_HOME>/conf/cassandra-env.sh
