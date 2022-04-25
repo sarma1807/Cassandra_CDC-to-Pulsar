@@ -10,7 +10,7 @@ For this demo, we will use ` Release v1.0.5 `
 
 ---
 
-## Download Pulsar-Cassandra-Source-<version>.nar (yes nar - not a typo)
+## Download Pulsar-Cassandra-Source-version.nar (yes nar - not a typo)
 ## on Apache Pulsar server :
 
 ```
@@ -39,7 +39,7 @@ $
 
 ---
 
-# pulsar-io-cassandra-<version>.nar WILL NOT WORK
+# pulsar-io-cassandra-version.nar WILL NOT WORK
 
 ## NOTE THAT ` Apache Cassandra Source and Sink ` available under ` Pulsar IO connectors ` on following webpage : https://pulsar.apache.org/en/download/
 
