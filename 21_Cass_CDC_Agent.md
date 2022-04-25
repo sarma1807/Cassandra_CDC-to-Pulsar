@@ -1,5 +1,6 @@
 # CDC Agent for Apache Cassandra
-This Agent is developed by DataStax as an open-source project. This agent will read the CDC data and publish it to Apache Pulsar as an ` Event Topic `.
+This Agent is developed by DataStax as an open-source project.
+This agent will read the CDC data and publish it to Apache Pulsar as an ` Event Topic `.
 
 https://github.com/datastax/cdc-apache-cassandra
 
