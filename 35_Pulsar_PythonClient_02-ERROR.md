@@ -8,5 +8,5 @@ Traceback (most recent call last):
 TypeError: __init__() missing 1 required positional argument: '_schema_definition'
 ```
 
-# I HAVE NO CLUE ON HOW TO READ THE AVRO SCHEMA FROM PULSAR SCHEMA REGISTRY
+# I HAVE NO CLUE ON HOW TO READ & USE THE AVRO SCHEMA FROM PULSAR SCHEMA REGISTRY
 
