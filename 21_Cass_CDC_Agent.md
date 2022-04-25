@@ -120,9 +120,9 @@ key:[xqoCIgL0r/GajGACSGY4YTE1MjFiLTQxOWEtNDgwZS04ZjNhLWVjZDRjZGM4ZjJkNg==], prop
 
 ```
 
-### these are just CDC events which inform Pulsar about which segments on Cassandra have changed.
+### These are just CDC events which inform Pulsar about which segments on Cassandra have changed.
 
-### now we have to configure the Pulsar-Cassandra-Source to have Pulsar pull the required changes (actual changed data) from Cassandra.
+### Now we have to configure the Pulsar-Cassandra-Source to have Pulsar pull the required changes (actual changed data) from Cassandra.
 
 ---
 
