@@ -14,7 +14,7 @@ AND table_name IN ('products', 'sales_orders') ;
          sales | sales_orders | False
 ```
 
-
+<br><br>
 
 ` $ cqlsh --execute="use sales; desc schema;" | egrep "CREATE TABLE|cdc =" `
 ```
@@ -48,7 +48,7 @@ AND table_name IN ('products', 'sales_orders') ;
          sales | sales_orders |  True
 ```
 
-
+<br><br>
 
 ` $ cqlsh --execute="use sales; desc schema;" | egrep "CREATE TABLE|cdc =" `
 ```
