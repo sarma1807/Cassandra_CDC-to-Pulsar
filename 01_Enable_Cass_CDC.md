@@ -30,7 +30,7 @@ cdc_total_space_in_mb: 10240
 
 ---
 
-### at this point, if you notice ` commitlogs ` folder and ` cdc_raw ` folder, they will contain similar files.
+### At this point, if you notice ` commitlogs ` folder and ` cdc_raw ` folder, they will contain similar files.
 
 ```
 $ ls -lh ~/data/commitlog/
