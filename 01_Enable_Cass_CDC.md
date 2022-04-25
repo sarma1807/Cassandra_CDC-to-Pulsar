@@ -1,4 +1,4 @@
-# Enable Apache Cassandra CDC (Change-Data-Capture)
+# Enable Apache Cassandra CDC (Change-Data-Capture) Feature
 
 ### CDC provides a mechanism to flag specific tables for archival as well as rejecting writes to those tables once a configurable size-on-disk for the CDC log is reached.
 
@@ -51,3 +51,4 @@ $
 ### ` cdc_raw ` files are NOT cleaned up automatically.
 
 ---
+
