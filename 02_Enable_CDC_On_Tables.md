@@ -33,6 +33,7 @@ cqlsh>
 ALTER TABLE sales.sales_orders WITH cdc = true ;
 ```
 
+---
 
 ```
 cqlsh>
