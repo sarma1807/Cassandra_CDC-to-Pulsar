@@ -3,7 +3,7 @@
 ### CDC provides a mechanism to flag specific tables for archival as well as rejecting writes to those tables once a configurable size-on-disk for the CDC log is reached.
 
 
-# vi <CASSANDRA_HOME>/conf/cassandra.yaml
+## vi <CASSANDRA_HOME>/conf/cassandra.yaml
 ```
 # MODIFY THESE CONFIGURATION VALUES ON ALL NODES OF CASSANDRA WHICH BELONG TO SAME DATA CENTER
 
@@ -30,7 +30,7 @@ cdc_total_space_in_mb: 10240
 
 ---
 
-### at this point, if you notice "commitlogs" folder and compare files with "cdc_raw" folder, they will contain similar files.
+### at this point, if you notice ` commitlogs ` folder and ` cdc_raw ` folder, they will contain similar files.
 
 ```
 $ ls -lh ~/data/commitlog/
@@ -47,7 +47,7 @@ $
 ```
 
 ## one big noticeable difference :
-` commitlog ` files are cleaned up when they are no longer required.
-` cdc_raw ` files are NOT cleaned up automatically
+### ` commitlog ` files are cleaned up when they are no longer required.
+### ` cdc_raw ` files are NOT cleaned up automatically.
 
 ---
