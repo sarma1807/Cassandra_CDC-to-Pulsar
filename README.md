@@ -1,6 +1,11 @@
 # Apache Cassandra CDC to Apache Pulsar
 Apache Cassandra Change-Data-Capture to Apache Pulsar
 
+---
+
+![CassCDCPulsarArch.jpg](https://github.com/sarma1807/Cassandra_CDC-to-Pulsar/blob/main/CassCDCPulsarArch.jpg)
+
+---
 
 ### Environment
 
