@@ -31,3 +31,6 @@ Please check : https://github.com/sarma1807/python-cassandra-driver/tree/master/
 
 ---
 
+![91_CDCPromGraf_00.jpg](https://github.com/sarma1807/Cassandra_CDC-to-Pulsar/blob/main/91_CDCPromGraf_00.jpg)
+
+<br><br>
