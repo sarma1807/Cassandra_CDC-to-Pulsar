@@ -2,7 +2,7 @@
 
 ---
 
-### 1. columns OPTION FOR Pulsar-Cassandra-Source
+## RESOLVED : 1. columns OPTION FOR Pulsar-Cassandra-Source
 
 ```
 ~/pulsar-current/conf/cass-source.yaml IN :
@@ -20,15 +20,15 @@ vi ~/pulsar-current/conf/cass-source.yaml
 configs:
   keyspace: "sales"
   table: "sales_orders"
-  columns: "user_email_id,user_state_code,order_grand_total"
-  # columns: NOT WORKING : Pulsar-Cassandra-Source gets created but with bunch of JAVA errors it will never go into RUNNING mode
-  # errors are so cryptic - I have no clue what is wrong with this
+  # WRONG SYNTAX : columns: "user_email_id,user_state_code,order_grand_total"
+  columns: "user_email_id|user_state_code|order_grand_total"
+  # columns: column separator is NOT COMMA - it is PIPE
 #########
 ```
 
 ---
 
-### 2. Python client : How to fetch and use AVRO schema
+## 2. Python client : How to fetch and use AVRO schema
 
 ```
 we know that : Cassandra CDC Agent & Source Connector will publish the schema in AVRO format to Pulsar Schema Registry.
@@ -47,18 +47,18 @@ VERY LITTLE TO NONE DOCUMENTATION/EXAMPLES EXIST BOTH FROM DATASTAX AND PULSAR P
 
 ---
 
-### 3. Prometheus Grafana
+## RESOLVED : 3. Prometheus Grafana (needs JMX/Metric Collector for Apache Cassandra (MCAC))
 
 ```
 ACCORDING TO :
 https://github.com/datastax/cdc-apache-cassandra#monitoring
 
 
-looks like it is possible to publish and build dashboards for CDC metrics
-but ZERO DOCUMENTATION on who publishes these metrics and how ?
-how to extract ? from where ?
+Basically the CDC agent exposes JMX metrics (as part of DSE metrics).
+We can use DSE Metrics Collector to expose the CDC metrics like other DSE metrics - this 
+is a capability related to monitoring DSE and is not specific to Pulsar.
 
-Team DataStax ???
+MCAC : https://github.com/datastax/metric-collector-for-apache-cassandra
 
 ```
 ---
