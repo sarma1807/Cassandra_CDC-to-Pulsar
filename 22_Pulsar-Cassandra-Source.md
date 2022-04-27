@@ -58,6 +58,7 @@ $
 configs:
   keyspace: "sales"
   table: "sales_orders"
+  columns: "user_email_id|user_state_code|order_grand_total"
   events.topic: "persistent://sales_tenant/sales_ns/events-sales.sales_orders"
   events.subscription.name: "cass_cdc_events_sub"
   contactPoints: "192.168.1.122,192.168.1.123"
