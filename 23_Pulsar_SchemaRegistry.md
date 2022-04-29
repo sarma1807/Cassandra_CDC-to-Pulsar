@@ -4,7 +4,7 @@
 
 ---
 
-#### schema for event topic
+### schema for event topic :
 
 ` ~/pulsar-current/bin/pulsar-admin schemas get persistent://sales_tenant/sales_ns/events-sales.sales_orders `
 
@@ -118,7 +118,7 @@
 
 ---
 
-#### schema for data topic [WITH ALL COLUMNS]
+### schema for data topic [WITH ALL COLUMNS] :
 
 ` ~/pulsar-current/bin/pulsar-admin schemas get persistent://sales_tenant/sales_ns/data-sales.sales_orders `
 
@@ -307,7 +307,7 @@
 
 ---
 
-#### schema for data topic [WITH ONLY FEW COLUMNS]
+### schema for data topic [WITH ONLY FEW COLUMNS] :
 
 ` ~/pulsar-current/bin/pulsar-admin schemas get persistent://sales_tenant/sales_ns/data-sales.sales_orders `
 
