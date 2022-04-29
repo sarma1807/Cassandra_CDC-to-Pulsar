@@ -118,7 +118,7 @@
 
 ---
 
-#### schema for data topic
+#### schema for data topic [WITH ALL COLUMNS]
 
 ` ~/pulsar-current/bin/pulsar-admin schemas get persistent://sales_tenant/sales_ns/data-sales.sales_orders `
 
@@ -273,6 +273,126 @@
             },
             {
               "name": "user_platform",
+              "type": [
+                "null",
+                "string"
+              ]
+            },
+            {
+              "name": "user_state_code",
+              "type": [
+                "null",
+                "string"
+              ]
+            }
+          ]
+        },
+        "type": "AVRO",
+        "properties": {}
+      }
+    },
+    "type": "KEY_VALUE",
+    "properties": {
+      "key.schema.name": "sales_orders",
+      "key.schema.properties": "{}",
+      "key.schema.type": "AVRO",
+      "kv.encoding.type": "SEPARATED",
+      "value.schema.name": "sales_orders",
+      "value.schema.properties": "{}",
+      "value.schema.type": "AVRO"
+    }
+  }
+}
+```
+
+---
+
+#### schema for data topic [WITH ONLY FEW COLUMNS]
+
+` ~/pulsar-current/bin/pulsar-admin schemas get persistent://sales_tenant/sales_ns/data-sales.sales_orders `
+
+```
+{
+  "version": 0,
+  "schemaInfo": {
+    "name": "data-sales.sales_orders",
+    "schema": {
+      "key": {
+        "name": "sales_orders",
+        "schema": {
+          "type": "record",
+          "name": "sales_orders",
+          "namespace": "sales",
+          "doc": "Table sales.sales_orders",
+          "fields": [
+            {
+              "name": "order_date",
+              "type": {
+                "type": "int",
+                "logicalType": "date"
+              }
+            },
+            {
+              "name": "order_date_hour",
+              "type": "int"
+            },
+            {
+              "name": "order_timestamp",
+              "type": [
+                "null",
+                {
+                  "type": "long",
+                  "logicalType": "timestamp-millis"
+                }
+              ]
+            },
+            {
+              "name": "order_code",
+              "type": [
+                "null",
+                {
+                  "type": "string",
+                  "logicalType": "uuid"
+                }
+              ]
+            }
+          ]
+        },
+        "type": "AVRO",
+        "properties": {}
+      },
+      "value": {
+        "name": "sales_orders",
+        "schema": {
+          "type": "record",
+          "name": "sales_orders",
+          "namespace": "sales",
+          "doc": "Table sales.sales_orders",
+          "fields": [
+            {
+              "name": "order_grand_total",
+              "type": [
+                "null",
+                {
+                  "type": "record",
+                  "name": "cql_decimal",
+                  "namespace": "",
+                  "fields": [
+                    {
+                      "name": "bigint",
+                      "type": "bytes"
+                    },
+                    {
+                      "name": "scale",
+                      "type": "int"
+                    }
+                  ],
+                  "logicalType": "cql_decimal"
+                }
+              ]
+            },
+            {
+              "name": "user_email_id",
               "type": [
                 "null",
                 "string"
