@@ -231,6 +231,21 @@ key:[xqoCIgKK3e2djGACSDg2OTJiOTQ5LWMxNDctNGJmNC1hMmUzLWU1MjBkOWM4ZjViNA==], prop
 -----------------------
 ```
 
+```
+
+# verify the incoming DATA messages using pulsar client using 'auto_consume' :
+~/pulsar-current/bin/pulsar-client --url pulsar://192.168.1.124:6650/ consume "persistent://sales_tenant/sales_ns/data-sales.sales_orders" --subscription-name "mySub" --num-messages 3 --schema-type "auto_consume"
+
+
+----- got message -----
+key:[kqsCIALK45PUpGACSDViYTE0OGRjLTlkYTgtNDYwNC1iMTUzLWI5NGQ2NTQzMDJmZA==], properties:[writetime=1654201922354946], content:{key={order_code=5ba148dc-9da8-4604-b153-b94d654302fd, order_date=19145, order_timestamp=1654187522277, order_date_hour=16}, value={user_email_id=1da61e7909a4@icloud.com, user_state_code=VT}}
+----- got message -----
+key:[kqsCIALy5JPUpGACSGZlMjVhYjVjLTAzOWUtNDM4OS1iOTc0LWMzZjhmYWM4NzAyNw==], properties:[writetime=1654201922458479], content:{key={order_code=fe25ab5c-039e-4389-b974-c3f8fac87027, order_date=19145, order_timestamp=1654187522361, order_date_hour=16}, value={user_email_id=c6ff3bcb9db4@aol.com, user_state_code=KY}}
+----- got message -----
+key:[kqsCIALA5pPUpGACSDI2ZDRmODE3LTQ1NjItNDM4OS1iMzJmLTFjYzE5MDJjOTk5Nw==], properties:[writetime=1654201922514472], content:{key={order_code=26d4f817-4562-4389-b32f-1cc1902c9997, order_date=19145, order_timestamp=1654187522464, order_date_hour=16}, value={user_email_id=6b628a9b6144@aol.com, user_state_code=RI}}
+-----------------------
+```
+
 
 #### Pulsar-Cassandra-Source logs
 
